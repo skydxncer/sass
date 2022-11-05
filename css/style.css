@@ -152,6 +152,9 @@ main #tratamientos .flip_card .card .back ul li {
   font-weight: bold;
   background-color: rgba(231, 230, 233, 0.5);
 }
+main #turnos div h2 {
+  background-color: #000;
+}
 .body_font {
   font-family: "Nunito";
 }
