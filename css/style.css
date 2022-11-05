@@ -1,0 +1,159 @@
+@charset "UTF-8";
+@import url(/scss/base/_variables.scss);
+@import url(/scss/base/_variables.scss);
+@import url(/scss/base/_variables.scss);
+@import url(/scss/base/_variables.scss);
+header {
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+header div {
+  margin-top: 2px;
+  width: auto;
+  height: auto;
+}
+header div img {
+  width: 100px;
+}
+header div {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header div nav div {
+  /*Acá hay un <a> y un <button> del toggle bar*/
+}
+header div nav div div ul li {
+  list-style-type: none;
+  font-size: small;
+  font-weight: bold;
+  margin-left: 10px;
+  padding: 0px 20px;
+  margin-top: 10px;
+  border: 1px solid rgba(177, 22, 130, 0.3);
+  border-radius: 20px;
+  box-shadow: inset 0px 0px 70px 0px rgb(225, 160, 190);
+}
+header div nav div div ul li:hover {
+  box-shadow: inset 0px 0px 42px 0px rgb(255, 240, 245);
+  color: black;
+}
+header div nav div div ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+main #home {
+  width: 100%;
+  height: 700px;
+}
+main #home .home_title {
+  margin: 0px 0px 0px 20px;
+  box-sizing: border-box;
+  line-height: 30px;
+  font-size: large;
+  color: #000;
+  animation: cssAnimation_0 3000ms 1 ease;
+  text-shadow: 0px 0px 8px rgb(255, 255, 255);
+}
+main #home .image_cover {
+  background-image: url(/images/home_cover.jpg);
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@keyframes cssAnimation_0 {
+  from {
+    transform: translate(200px);
+  }
+  to {
+    transform: translate(0px);
+  }
+}
+main #tratamientos {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -100px;
+}
+main #tratamientos .flip_card {
+  background-color: transparent;
+  width: 404px;
+  height: 304px;
+  perspective: 1000px;
+  display: inline-block;
+  align-items: center;
+}
+main #tratamientos .flip_card .card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+main #tratamientos .flip_card .card:hover {
+  transform: rotateY(180deg);
+}
+main #tratamientos .flip_card .card .front {
+  position: absolute;
+  width: 100%;
+  backface-visibility: hidden;
+  color: black;
+  height: 100%;
+}
+main #tratamientos .flip_card .card .front img {
+  width: 400px;
+  height: 300px;
+  border: 2px solid;
+  border-color: #de95a7;
+  border-radius: 10px;
+}
+main #tratamientos .flip_card .card .front h2 {
+  position: absolute;
+  bottom: 100%;
+  color: black;
+}
+main #tratamientos .flip_card .card .back {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  backface-visibility: hidden;
+  background-color: #de95a7;
+  color: #000;
+  transform: rotateY(180deg);
+  border: 2px solid;
+  border-color: #e7e6e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 10px;
+}
+main #tratamientos .flip_card .card .back ul {
+  width: 100%;
+  padding: 0px;
+  list-style-type: none;
+  display: flex;
+}
+main #tratamientos .flip_card .card .back ul li {
+  list-style-type: none;
+  margin: 2px;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  background-color: rgba(231, 230, 233, 0.5);
+}
+.body_font {
+  font-family: "Nunito";
+}
+
+/*# sourceMappingURL=style.css.map */
