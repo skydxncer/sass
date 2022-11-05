@@ -97,14 +97,12 @@ main {
                     height: 300px;
                     backface-visibility: hidden;
                     background-color: $bg-general;
-                    color: #000;
+                    color: #000000;
                     transform: rotateY(180deg);
                     border: 2px solid;
                     border-color: #e7e6e9;
                     display: flex;
                     align-items: center;
-                    justify-content: center;
-                    flex-direction: row;
                     border-radius: 10px;
 
                     ul {
@@ -112,6 +110,7 @@ main {
                         padding: 0px;
                         list-style-type: none;
                         display: flex;
+                        flex-direction: column;
 
                         li {
                             list-style-type: none;
@@ -128,12 +127,38 @@ main {
     }
 
     #turnos {
+        width: 100%;
+        height: auto;
+        padding: 50px 0px 50px 0px;
+
         div {
-            h2 {background-color: #000;}
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            background-color: rgba(222, 149, 167, 0.5);
 
-            h3 {}
+            h2,
+            h3 {
+                margin: 70px auto;
+            }
 
-            a {}
+            a {
+                margin: 70px auto;
+                color: #000;
+                background-color: $bg-general   ;
+                border-radius: 50px;
+                text-decoration: none;
+                padding: 5px 20px 5px 20px;
+                font-weight: bold;
+                border: 1px solid black;
+
+                &:hover {
+                    border: 2px solid #03c100a9;
+                    background-color: #03c10094;
+                    color: black;
+                    transform: scale(1.1);
+                }
+            }
         }
     }
 
@@ -141,11 +166,15 @@ main {
         .ubicación_mapa {
             iframe {}
         }
-         .ubicacion_contacto {
+
+        .ubicacion_contacto {
             h2 {}
+
             input {}
+
             textarea {}
+
             button {}
-         }
+        }
     }
 }
